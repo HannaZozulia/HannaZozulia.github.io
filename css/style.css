@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i,700,900&display=swap");
 
-body {
+body, body * {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -807,12 +807,13 @@ h3 {
 }
 
 .contact-info .media-body p a{
-  color: #8a8a8a; 
+  color: #8a8a8a;
+  text-decoration: none; 
   transition: color 0.3s; 
 }
 
-.contact-info .media-body a:hover {
-  color: #DB9A64; 
+.contact-info .media-body p a:hover {
+  color: #DB9A64 !important; 
 }
 
 .contact-title {
