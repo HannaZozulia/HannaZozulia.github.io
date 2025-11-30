@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal;
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none; 
 }
 
 a,
@@ -473,7 +477,7 @@ h3 {
       h3 {
         font-family: "Roboto", sans-serif;
         font-size: 80px;
-        text-transform: capitalize;
+        /* text-transform: capitalize;  Все слова с большой буквы */
         font-weight: 300;
         line-height: 90px;
         color: #fff;
@@ -802,8 +806,13 @@ h3 {
   font-size: 27px;
 }
 
-.contact-info .media-body p {
-  color: #8a8a8a;
+.contact-info .media-body p a{
+  color: #8a8a8a; 
+  transition: color 0.3s; 
+}
+
+.contact-info .media-body a:hover {
+  color: #DB9A64; 
 }
 
 .contact-title {
